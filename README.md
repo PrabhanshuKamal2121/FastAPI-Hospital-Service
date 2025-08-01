@@ -1,4 +1,4 @@
-# FastAPI - Patient Management System 
+# Patient Management System API
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -36,19 +36,20 @@ A modern, scalable, and robust **Patient Management System API** built with **Fa
 ├── main.py          # Main API implementation with CRUD and sorting endpoints
 ├── main2.py         # Simplified API version with basic endpoints
 ├── paitent.json     # JSON file for storing patient data
+├── requirements.txt # Dependency list
 ├── README.md        # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.8+
-- pip (Python package manager)
+- **Python 3.8+**
+- **pip** (Python package manager)
 
-### Installation
+### Setup Commands
 
 1. **Clone the Repository**:
    ```bash
@@ -56,7 +57,7 @@ A modern, scalable, and robust **Patient Management System API** built with **Fa
    cd patient-management-api
    ```
 
-2. **Set Up a Virtual Environment** (optional but recommended):
+2. **Set Up a Virtual Environment** (recommended):
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -64,7 +65,7 @@ A modern, scalable, and robust **Patient Management System API** built with **Fa
 
 3. **Install Dependencies**:
    ```bash
-   pip install fastapi uvicorn pydantic
+   pip install -r requirements.txt
    ```
 
 4. **Run the Application**:
@@ -73,8 +74,19 @@ A modern, scalable, and robust **Patient Management System API** built with **Fa
    ```
 
 5. **Access the API**:
-   - Open your browser and navigate to `http://127.0.0.1:8000/docs` for the interactive Swagger UI.
-   - Alternatively, use tools like **Postman** or **cURL** to interact with the API.
+   - Open your browser and navigate to:
+     ```
+     http://127.0.0.1:8000/docs
+     ```
+     This will display the interactive Swagger UI for testing the API endpoints.
+
+### Notes
+- The `requirements.txt` includes:
+  - `fastapi>=0.115.0`
+  - `uvicorn>=0.30.6`
+  - `pydantic>=2.9.2`
+- Ensure `pip` is associated with the correct Python version (e.g., use `pip3` if necessary).
+- If you encounter issues, verify that your Python environment is correctly set up.
 
 ---
 
